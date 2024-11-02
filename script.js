@@ -1,3 +1,10 @@
+document.getElementById("calculate-button").addEventListener("click", () => calculateAge());
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    calculateAge();
+  }
+});
+
 function calculateAge() {
   const day = parseInt(document.getElementById("day").value);
   const month = parseInt(document.getElementById("month").value);

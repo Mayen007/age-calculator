@@ -5,12 +5,10 @@
   font-style: normal;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -74,7 +72,7 @@ button {
   color: #ffffff;
   border: none;
   border-radius: 50%;
-  width: 40px;
+  width: 45px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -86,6 +84,10 @@ button {
 
 button:hover {
   background-color: #5a38a1;
+}
+
+button:focus {
+  background-color: black;
 }
 
 button img {
@@ -103,8 +105,6 @@ button img {
   margin-top: 20px;
   font-size: 40px;
   font-weight: bolder;
-  text-align: center;
-  align-items: center;
 }
 
 .result p {
@@ -114,6 +114,39 @@ button img {
 
 .result span {
   color: #8454fe;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 36px;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+
+  .line-2,
+  .line-1 {
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #2f2e2e;
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .line-2 {
+    display: none;
+  }
+
+  .line-1 {
+    width: 100%;
+    height: 1px;
+    background-color: #2f2e2e;
+    opacity: 0.2;
+  }
+
 }
