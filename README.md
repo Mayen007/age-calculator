@@ -34,12 +34,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the Age Calculator App](./screenshot.jpg)
+![Screenshot of the Age Calculator App - Desktop](./assets/images/desktop-view.png)
+![Screenshot of the Age Calculator App - Mobile](./assets/images/mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-with-html-css-and-javascript-aTsoPXWD6e)
+- Live Site URL: [Live Site](https://mayen007.github.io/age-calculator/)
 
 ## My process
 
@@ -96,5 +97,5 @@ In future projects, I plan to focus on:
 
 ## Author
 
-- Website - [Your Name](https://github.com/Mayen007)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Mayen007)
+- Website - [GitHub Pages](https://github.com/Mayen007)
+- Frontend Mentor - [@Mayen007](https://www.frontendmentor.io/profile/Mayen007)
