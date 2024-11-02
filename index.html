@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Age Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-section">
+      <div class="input-box">
+        <label for="day">Day</label>
+        <input type="number" id="day" placeholder="DD" min="1" max="31">
+      </div>
+      <div class="input-box">
+        <label for="month">Month</label>
+        <input type="number" id="month" placeholder="MM" min="1" max="12">
+      </div>
+      <div class="input-box">
+        <label for="year">Year</label>
+        <input type="number" id="year" placeholder="YYYY" min="1900">
+      </div>
+      <button onclick="calculateAge()" title="Calculate Years">
+        <!-- <span>&#9660;</span> -->
+         <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+    </div>
+    <div id="error-message"></div>
+    <div class="result">
+      <p><span id="years" class="age-number">0</span> <strong>years</strong></p>
+      <p><span id="months" class="age-number">0</span> <strong>months</strong></p>
+      <p><span id="days" class="age-number">0</span> <strong>days</strong></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
