@@ -27,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--quaternary-color);
+  background-color: var(--secondary-color);
   transition: all 0.3s;
   font-family: 'Poppins', sans-serif;
 }
