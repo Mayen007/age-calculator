@@ -15,8 +15,6 @@ This is a solution to the [Age Calculator App challenge on Frontend Mentor](http
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-## Overview
-
 ### The challenge
 
 Users should be able to:
@@ -34,22 +32,20 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot of the Age Calculator App - Desktop](./assets/images/desktop-view.png)
-![Screenshot of the Age Calculator App - Mobile](./assets/images/mobile-view.png)
+!Desktop View[Screenshot of the Age Calculator App - Desktop](./assets/images/desktop-view.png)
+!Mobile View [Screenshot of the Age Calculator App - Mobile](./assets/images/mobile-view.png)
 
 ### Links
 
 - Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/age-calculator-app-with-html-css-and-javascript-aTsoPXWD6e)
 - Live Site URL: [Live Site](https://mayen007.github.io/age-calculator/)
 
-## My process
-
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- CSS Break-points
 - Mobile-first workflow
 - JavaScript for validation and age calculation
 - Custom fonts loaded using `@font-face`
@@ -80,11 +76,11 @@ Implemented JavaScript validation to ensure data integrity and improve user expe
 
 ### Responsive Design
 
-Used Flexbox and CSS Grid to create a responsive layout that adapts to different screen sizes, providing an optimal view for both mobile and desktop users. The layout reorganizes itself seamlessly, making it easy to navigate and interact with on any device.
+Used Flexbox and CSS Break-points to create a responsive layout that adapts to different screen sizes, providing an optimal view for both mobile and desktop users. The layout reorganizes itself seamlessly, making it easy to navigate and interact with on any device.
 
 ## Continued Development
 
-In future projects, I plan to focus on:
+In future projects, I plan to focus on: Javascript related projects.
 
 - **Animations**: Experimenting with CSS and JavaScript animations to add smooth, engaging transitions. This can enhance user interaction, especially when age values are displayed after submission.
 - **Error Handling**: Further refining form validation to account for complex date inputs and edge cases, improving overall robustness and reliability.

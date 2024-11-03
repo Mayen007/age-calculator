@@ -5,6 +5,17 @@
   font-style: normal;
 }
 
+:root {
+  --primary-color: #864cff;
+  --secondary-color: #f3f3f3;
+  --tertiary-color: #151515;
+  --quaternary-color: #ffffff;
+  --quinary-color: #666;
+  --senary-color: #ddd;
+  --error-color: red;
+  --line-color: #2f2e2e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,19 +27,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f3f3f3;
+  background-color: var(--quaternary-color);
   transition: all 0.3s;
   font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  background-color: #ffffff;
+  background-color: var(--quaternary-color);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 90%;
-  width: 450px;
+  width: 400px;
   border-bottom-right-radius: 100px;
 }
 
@@ -48,14 +59,14 @@ body {
 .input-box label {
   font-size: 12px;
   margin-bottom: 5px;
-  color: #666;
+  color: var(--quinary-color);
   text-transform: uppercase;
 }
 
 .input-box input {
   width: 70px;
   padding: 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--quinary-color);
   border-radius: 5px;
   text-align: center;
   transition: border-color 0.3s;
@@ -64,12 +75,12 @@ body {
 
 .input-box input:focus {
   outline: none;
-  border-color: #8454fe;
+  border-color: var(--primary-color);
 }
 
 button {
-  background-color: #8454fe;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
   border: none;
   border-radius: 50%;
   width: 45px;
@@ -96,26 +107,26 @@ button img {
 }
 
 #error-message {
-  color: red;
+  color: var(--error-color);
   margin-top: 10px;
   font-size: 14px;
 }
 
 .result {
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: bolder;
 }
 
 .result p {
   margin: 5px 0;
-  text-align: center;
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #151515;
+  font-weight: 900;
 }
 
-.result span {
-  color: #8454fe;
-  font-weight: bolder;
-  font-size: 36px;
+.age-number {
+  color: var(--primary-color);
 }
 
 .button-div {
@@ -132,7 +143,7 @@ button img {
     display: block;
     width: 50%;
     height: 1px;
-    background-color: #2f2e2e;
+    background-color: var(--line-color);
     opacity: 0.2;
   }
 }
@@ -145,8 +156,14 @@ button img {
   .line-1 {
     width: 100%;
     height: 1px;
-    background-color: #2f2e2e;
+    background-color: var(--line-color);
     opacity: 0.2;
   }
 
+}
+
+@media (max-width:427px) {
+  .result p {
+    font-size: 3.3rem;
+  }
 }
