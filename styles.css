@@ -23,10 +23,6 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background-color: var(--secondary-color);
   transition: all 0.3s;
   font-family: 'Poppins', sans-serif;
@@ -41,6 +37,10 @@ body {
   max-width: 90%;
   width: 400px;
   border-bottom-right-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .input-section {
@@ -168,11 +168,18 @@ button img {
   }
 }
 
+@media (max-width: 375px) {
+  .result p {
+    font-size: 2.8rem;
+  }
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
   position: fixed;
   bottom: 20px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .attribution a {
