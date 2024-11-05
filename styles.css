@@ -168,9 +168,15 @@ button img {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 360px) {
   .result p {
     font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .result p {
+    font-size: 2.5rem;
   }
 }
 
@@ -179,7 +185,7 @@ button img {
   position: fixed;
   bottom: 20px;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .attribution a {
