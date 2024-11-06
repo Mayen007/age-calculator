@@ -21,32 +21,53 @@ function calculateAge() {
     const month = parseInt(document.getElementById("month").value.trim(), 10);
     const year = parseInt(document.getElementById("year").value.trim(), 10);
 
-    // Clear previous error message
+    // Clear previous error message and reset input borders
     displayError("");
+    resetInputBorders();
 
     // Validation
+    let isValid = true;
     if (isNaN(day) || isNaN(month) || isNaN(year)) {
       displayError("All fields must be numeric.");
+      highlightInvalidInputs(day, month, year);
       return;
     }
     if (!day || !month || !year) {
       displayError("All fields are required.");
+      highlightInvalidInputs(day, month, year);
       return;
     }
     if (day < 1 || day > 31) {
       displayError("Day must be between 1 and 31.");
-      return;
+      document.getElementById("day").style.borderColor = "red";
+      document.querySelector("label[for='day']").style.color = "red";
+      isValid = false;
+    } else {
+      document.getElementById("day").style.borderColor = "";
+      document.querySelector("label[for='day']").style.color = "";
     }
     if (month < 1 || month > 12) {
       displayError("Month must be between 1 and 12.");
-      return;
+      document.getElementById("month").style.borderColor = "red";
+      document.querySelector("label[for='month']").style.color = "red";
+      isValid = false;
+    } else {
+      document.getElementById("month").style.borderColor = "";
+      document.querySelector("label[for='month']").style.color = "";
     }
 
     const today = new Date();
     if (year > today.getFullYear()) {
       displayError("Year cannot be in the future.");
-      return;
+      document.getElementById("year").style.borderColor = "red";
+      document.querySelector("label[for='year']").style.color = "red";
+      isValid = false;
+    } else {
+      document.getElementById("year").style.borderColor = "";
+      document.querySelector("label[for='year']").style.color = "";
     }
+
+    if (!isValid) return;
 
     // Check if the date is valid
     const birthDate = new Date(year, month - 1, day);
@@ -56,6 +77,7 @@ function calculateAge() {
       birthDate.getFullYear() !== year
     ) {
       displayError("Invalid date.");
+      highlightInvalidInputs(day, month, year);
       return;
     }
 
@@ -83,6 +105,27 @@ function calculateAge() {
     console.error(error);
   }
   clearInputs();
+}
+
+function highlightInvalidInputs(day, month, year) {
+  if (isNaN(day) || !day) {
+    document.getElementById("day").style.borderColor = "#f54640";
+    document.querySelector("label[for='day']").style.color = "#f54640";
+  }
+  if (isNaN(month) || !month) {
+    document.getElementById("month").style.borderColor = "#f54640";
+    document.querySelector("label[for='month']").style.color = "#f54640";
+  }
+  if (isNaN(year) || !year) {
+    document.getElementById("year").style.borderColor = "#f54640";
+    document.querySelector("label[for='year']").style.color = "#f54640";
+  }
+}
+
+function resetInputBorders() {
+  document.getElementById("day").style.borderColor = "";
+  document.getElementById("month").style.borderColor = "";
+  document.getElementById("year").style.borderColor = "";
 }
 
 function animateNumber(id, finalValue) {
